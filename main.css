@@ -1,0 +1,852 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.5;
+
+}
+
+:root {
+    --color1: orangered;
+    --color2: white;
+    --color3: black;
+    --color4: lightgray;
+    --color5: gray;
+    --color6: whitesmoke;
+}
+
+/* .wrapper {
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+} */
+/* header section */
+.menu-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 50px;
+
+}
+
+.menu-container ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 75px;
+    list-style: none;
+}
+
+.menu-container ul li {
+    padding: 1rem;
+    padding: 20px 30px;
+    text-align: center;
+
+}
+
+.nav-list li a:hover {
+    color: var(--color1);
+    /* Set the color when hovered */
+}
+
+.menu-container ul li a {
+    text-decoration: none;
+    color: var(--color3);
+}
+
+.bold-p {
+    padding: 0px 10px 15px;
+    font-weight: 600;
+}
+
+.banner h1 {
+    font-size: 45px;
+    margin: 2px 0px 10px;
+    padding: 10px;
+}
+
+.banner {
+    background-image: url("./images/heroimg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+
+}
+
+.first-banner {
+    position: relative;
+    text-align: center;
+    margin: 20px 0px 0px;
+    padding: 0px 10px;
+    color: var(--color2);
+}
+
+.banner button {
+    border-radius: 18px;
+    padding: 12px 40px;
+    margin: 20px 10px;
+    text-align: center;
+
+}
+
+.appstore1-btn {
+    color: var(--color2);
+    background-color: initial;
+    border: 1px solid var(--color2);
+    animation: bounce 5s infinite;
+}
+
+.playstore1-btn {
+    color: var(--color2);
+    background-color: var(--color1);
+    border-style: none;
+    animation: bounce 5s infinite;
+}
+
+.txt1-btn {
+    font-weight: bold;
+}
+
+.banner img {
+    width: 100%;
+}
+
+
+.second-banner {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-47%, -45%);
+    transition: transform 0.6s;
+
+}
+
+.line-header hr {
+    color: var(--color4);
+    width: 50%;
+    height: 1px;
+    margin: 40% 25% 3%;
+
+}
+
+.line-header {
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+}
+
+/* main content */
+.dual-view {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    /* margin-top: 150px;
+    margin-bottom: 20px; */
+}
+
+.view {
+    display: flex;
+    flex-direction: column;
+    /* row-gap: 70px; */
+    /* width: 50%;  */
+    /* padding: 90px;  */
+    /* margin: 10px 0px 10px 0px;  */
+}
+
+.orange-text {
+    color: var(--color1);
+    font-weight: bold;
+}
+
+.description {
+    color: var(--color5);
+    font-size: 20px;
+}
+
+.info {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.5;
+    flex: 1;
+    word-spacing: 2px;
+    /* padding: 3em 3em 3em;  */
+}
+
+.dual-view img {
+    width: 502px;
+    height: 670px;
+}
+
+
+.view h2 {
+    padding: 8px 0px 10px;
+}
+
+.download-banner {
+    background-image: url("images/lower-heroimg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+
+}
+
+.last-banner {
+    text-align: center;
+    margin: 20px 0px 0px;
+    padding: 0px 10px;
+    color: var(--color2);
+}
+
+.download-banner button {
+    color: var(--color2);
+    border: 1px solid var(--color2);
+    border-radius: 10px;
+    padding: 14px 25px;
+    margin: 20px 8px;
+    text-align: center;
+    background-color: initial;
+}
+
+.download-banner .playstore2-btn {
+    background-color: var(--color1);
+    border-style: none;
+}
+
+.download-banner button:hover,
+.banner button:hover {
+    background-color: var(--color4);
+    border-style: none;
+    color: var(--color3);
+}
+
+/* footer section */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 100px;
+}
+
+.social-media i {
+    color: var(--color1);
+    font-size: 2em;
+
+}
+
+.social-media {
+    display: flex;
+    gap: 20px;
+
+}
+
+.bold-text {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.text p {
+    font-size: 18px;
+    margin: 10px 0px 20px 0px;
+}
+
+
+.social-media a.linkedin-icon {
+    display: none;
+}
+
+/* styling the skip links */
+.skip-links a {
+    display: inline-block;
+    color: var(--color3);
+    background: var(--color2);
+    padding: .5em;
+    position: absolute;
+    left: -99999rem;
+    z-index: 100;
+}
+
+.skip-links a:focus {
+    left: 0;
+}
+
+/* adding two animation */
+.second-banner:hover img {
+    transform: rotateY(180deg);
+}
+
+
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+        /* Bounce at the top and bottom */
+    }
+
+    40% {
+        transform: translateY(-30px);
+        /* Move up during the bounce */
+    }
+
+    60% {
+        transform: translateY(-15px);
+        /* Move down during the bounce */
+    }
+}
+
+/*************** Product Page starts ***************/
+/* 
+.product-page {
+    margin: 32px 50px;
+    padding: 16px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: var(--color3);
+    background-color: var(--color6);
+}
+
+
+button {
+    color: var(--color2);
+    padding: 10px 50px;
+    background: var(--color1);
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+}
+
+.products {
+    background: var(--color6);
+    display: flex;
+    flex-flow: row wrap;
+    gap: 16px;
+    padding: 16px;
+
+}
+
+
+.product {
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    border: 2px solid var(--color6);
+    padding: 16px;
+    border-radius: 3px;
+    flex-basis: 300px;
+    flex-grow: 1;
+
+}
+
+.product .product-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.product-title {
+    margin-bottom: 0;
+}
+
+.small-txt {
+    font-size: small;
+
+}
+
+.price {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.highlight-price {
+    color: var(--color1);
+}
+
+.cart-box {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-inline: auto;
+}
+
+
+.cart-btn {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.increment,
+.decrement {
+    padding: 0;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+} */
+.product-page{
+    margin: 32px 50px;
+    padding: 16px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: var(--color3);
+    background-color: var(--color6);
+}
+
+
+button {
+    color: var(--color2);
+    padding: 10px 50px;
+    background: var(--color1);
+    border-radius: 3px;
+    border:none;
+    cursor: pointer;
+}
+
+.products {
+    background: var(--color6);
+    display: flex;
+    flex-flow: row wrap;
+    gap: 16px;
+    padding: 16px;
+
+}
+
+
+.product {
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    border: 2px solid var(--color6);
+    padding: 16px;
+    border-radius: 3px;
+    flex-basis: 300px;
+    flex-grow: 1;
+
+}
+
+.product .product-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.product-title {
+    margin-bottom: 0;
+}
+
+.small-txt {
+    font-size: small;
+
+}
+
+.price {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.highlight-price {
+    color: var(--color1);
+}
+
+.cart-box {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-inline: auto;
+}
+
+
+.cart-btn {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.increment,
+.decrement {
+    padding: 0;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+}
+/*************** Product page ends ***************/
+
+/*************** Faq page starts ***************/
+
+.background-faq {
+    background-image: url(images/pexels-dana-tentis-262959.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 140px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50%;
+    padding: 30px 0;
+    background-color: var(--color6);
+    border-radius: 20px;
+}
+
+
+.box {
+    display: block;
+    position: absolute;
+    z-index: 1;
+}
+
+
+.faq {
+    padding: 30px 30px;
+}
+
+.faq h1 {
+    text-transform: uppercase;
+    font-size: 30px;
+    padding-bottom: 35px;
+    color: var(--color3);
+
+}
+
+
+.questions {
+    font-size: 15px;
+    padding-right: 80px;
+
+
+}
+
+
+.question {
+    border-bottom: var(--color1) 1px solid;
+    padding: 10px 10px 10px 0;
+
+}
+
+.q-a {
+    text-decoration: none;
+    color: var(--color3);
+    font-weight: bold;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+/*************** Faq page ends ***************/
+
+/*************** contact page starts ***************/
+.body-contact {
+    overflow-x: hidden;
+}
+
+.container-cnt {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: var(--color6);
+    border-radius: 8px;
+    display: flex;
+    margin-top: 5%;
+}
+
+.column {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+.column:nth-child(2) {
+    background-image: url("./images/Solid\ deep\ blue.jpg");
+    background-size: cover;
+
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.form-label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+input,
+textarea {
+    width: 99%;
+    padding: 10px;
+    margin-bottom: 25px;
+    border: 1px solid var(--color4);
+    border-radius: 5px;
+}
+
+button {
+    background-color: var(--color1);
+    color: var(--color2);
+    padding: 10px 30px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--color4);
+    color: var(--color3);
+}
+
+/* Style the contact information in the second column */
+.contact-info,
+.contact-info a {
+    color: var(--color2);
+
+}
+
+ul li {
+    list-style: none;
+}
+
+/*************** contact page ends ***************/
+
+/* APPLYING MEDIA QUERIES */
+@media screen and (max-width: 500px) {
+    .menu-container {
+        flex-direction: column;
+    }
+
+    .bold-p {
+        color: var(--color5);
+    }
+
+    .thin-p {
+        color: var(--color5);
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    .menu-container ul {
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .menu-container ul li {
+        width: 100%;
+    }
+
+    .view {
+        padding: 0px;
+    }
+
+    .banner {
+        background-image: none;
+        /* Remove background image */
+    }
+
+    .second-banner {
+        display: flex;
+        justify-content: center;
+    }
+
+    .text-banner {
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        color: var(--color3);
+    }
+
+    .appstore1-btn {
+        color: var(--color1);
+        border: 1px solid var(--color1);
+    }
+
+
+    .btns {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+
+    }
+
+    .dual-view {
+        flex-direction: column-reverse;
+        margin-bottom: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .exception {
+        flex-direction: column;
+    }
+
+    .view {
+        width: 100%;
+    }
+
+    .download-banner {
+        background-image: none;
+        /* Remove background image */
+        background-image: url("./images/Solid\ deep\ blue.jpg");
+
+    }
+
+    .info {
+        width: 100%;
+        flex-direction: column;
+        margin: 7em 0 0;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo-container {
+        display: none;
+    }
+
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .second-banner {
+        margin-top: 300px;
+        position: relative;
+
+    }
+
+    .line-header {
+        margin-top: -490px;
+    }
+
+    .social-media {
+        margin-bottom: 20px;
+        flex-direction: row;
+        justify-content: center;
+        margin-right: 190px;
+
+    }
+
+    .copyright-text p {
+        display: none;
+    }
+
+    /* Change the text content for the mobile version */
+    .copyright-text:before {
+        content: "Just type what's on your mind and we'll";
+        display: block;
+        margin-right: 190px;
+
+    }
+
+    .txt2-btn {
+        display: none;
+    }
+
+    .playstore2-btn::before {
+        content: 'Buy Now';
+    }
+
+    .appstore2-btn::before {
+        content: 'Try for free';
+    }
+
+    /* Change the text inside the App Store button for mobile */
+    .social-media a.instagram-icon {
+        display: none;
+        /* Hide Instagram icon on mobile screens */
+    }
+
+    .social-media a.linkedin-icon {
+        display: inline-block;
+        /* Display LinkedIn icon on mobile screens */
+    }
+
+    .dual-view img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 40px;
+        max-width: 100%;
+
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    /* faq media starts */
+    .main-container {
+
+        display: block;
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    .questions {
+        padding-right: 0;
+    }
+
+
+    .faq h1 {
+        text-align: center;
+    }
+
+    .faq {
+        padding-top: 20px;
+    }
+
+    /* faq media endss */
+
+    /* contact media starts */
+    .container-cnt {
+        flex-direction: column;
+
+    }
+
+    .column {
+        width: 100%;
+        padding: 10px;
+
+    }
+
+    /* contact media ends */
+}

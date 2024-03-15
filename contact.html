@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/7e25c04904.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="main.css">
+    <title>Contact Form</title>
+</head>
+
+<body class="body-contact">
+    <header role="banner">
+        <div class="container">
+            <!-- Skip links for accessibility -->
+            <ul class="skip-links">
+                <li><a href="#nav">Skip to main nav</a></li>
+                <li><a href="#main">Skip to main content</a></li>
+            </ul>
+            <div class="menu-container">
+                <!-- Logo and navigation menu -->
+                <div class="logo-container">
+                    <img src="images/logo.png" alt="web logo">
+                </div>
+                <nav id="nav" role="navigation" aria-label="Main navigation menu">
+                    <ul class="nav-list">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./product.html">Product</a></li>
+                        <li><a href="./faq.html">Faq</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- Banner section -->
+    <section class="banner">
+        <!-- First banner with content -->
+        <div class="first-banner">
+            <div class="text-banner">
+                <p class="bold-p">Food app</p>
+                <h1>Why stay hungry when <br> you can order from Bella Onojio</h1>
+                <p class="thin-p">Download the bella onoje's food app now on</p>
+            </div>
+            <div class="btns">
+                <!-- Download buttons from Play Store and App Store -->
+                <button class="playstore1-btn" aria-label="Download from Play Store">
+                    <span class="txt1-btn"> Play store</span>
+                </button>
+                <button class="appstore1-btn" aria-label="Download from App Store">
+                    <span class="txt1-btn"> App store</span>
+                </button>
+
+            </div>
+        </div>
+    </section>
+
+    <div class="container-cnt">
+        <div class="column">
+            <h2>Contact Us</h2>
+            <form role="form">
+                <label for="name" class="form-label">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter Your Name" aria-label="name" required>
+
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" id="email" name="email" placeholder="email@example.com" aria-label="email" required>
+
+                <label for="message" class="form-label">Message:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Enter Your Message Here"
+                    aria-label="message"></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div class="column">
+            <div class="contact-info" role="contentinfo">
+                <h2>Contact Information</h2>
+                <ul itemscope itemtype="https://schema.org/Person">
+                    <li itemprop="name"><strong>Name:</strong> Maede</li>
+                    <li itemprop="jobTitle"><strong>Job Title:</strong> Founder</li>
+                    <li itemprop="email"><strong>Email:</strong> maedeh@gmail.com</li>
+                    <li itemprop="address"><strong>Address:</strong> 510 Hazeldean RD, Kanata, ON</li>
+                </ul>
+                <p>Feel free to contact us for any assistance.</p>
+            </div>
+        </div>
+    </div>
+    <!-- Footer section -->
+    <footer>
+        <div class="footer-container">
+            <!-- Logo, social media icons, and copyright information -->
+
+            <div class="logo-container">
+                <img src="./images/logo.png" alt="logo" class="logo" aria-label="Web Logo">
+            </div>
+            <div class="social-media">
+                <a href="https://www.twitter.com" aria-label="twitter"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.facebook.com" aria-label="facebook"><i class="fab fa-facebook-square"></i></a>
+                <a href="https://www.instagram.com" class="instagram-icon" aria-label="instagram"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com" class="linkedin-icon" aria-label="linkedin"><i
+                        class="fab fa-linkedin"></i></a>
+            </div>
+            <div class="copyright-text">
+                <p>&copy; Copyright 2020 Bella Onojie.com </p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
